@@ -1,6 +1,14 @@
-Java客户端核心源码
+Maven
 =======
-StatisticClient.java、StatisticProtocol.java、UdpClientSocket.java
+```xml
+<dependency>
+  <groupId>com.github.shuiguang</groupId>
+  <artifactId>workerman-statistics-java</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+</dependency>
+```
+
+暂时先提交一个SNAPSHOT在线版本，RELEASE版稍后补上。
 
 特色功能
 =======

@@ -1,18 +1,23 @@
+package com.github.shuiguang;
+
+import org.junit.Test;
+
 /**
  * Statistic统计java客户端
  * @author shuiguang
  *
  */
 public class StatisticClientTest {
-	
-	public static void main(String[] args) {
+
+	@Test
+	public void demo1() {
 		// 模块名称
 		String moduleName = "TestModule";
 		// 接口名称
 		String interfaceName = "TestInterface";
-		// 执行状态
-		int success = rand(0,1);
-		// 状态码
+		// 设置执行状态
+		int success = rand(0, 1);
+		// 设置请求状态码
 		int code = rand(300, 400);
 		// 日志消息
 		String msg = "这个是测试消息";
@@ -25,10 +30,10 @@ public class StatisticClientTest {
 		StatisticClient.tick(moduleName, interfaceName);
 		
 		try {
-			// 执行耗时任务
+			// 执行逻辑任务(业务代码)
 			Thread.sleep(rand(10, 600));
 			
-			// 发送数据
+			// 发送统计数据
 			StatisticClient.report(moduleName, interfaceName, success, code, msg, host, serverPort);
 			
 		}catch(Exception e) {
