@@ -4,11 +4,11 @@ Maven
 <dependency>
   <groupId>com.github.shuiguang</groupId>
   <artifactId>workerman-statistics-java</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
-暂时先提交一个SNAPSHOT在线版本，RELEASE版稍后补上。
+RELEASE版本已经提交到Maven仓库，数据同步中……。
 
 特色功能
 =======
@@ -79,7 +79,7 @@ Linux服务端所需环境
 
 上传workerman-statistics-linux.zip到服务器，解压。
 
-版本升级网址：[https://github.com/walkor/workerman-statistics](https://github.com/walkor/workerman-statistics)
+感谢walkor长期以来给予的支持，版本升级网址：[https://github.com/walkor/workerman-statistics](https://github.com/walkor/workerman-statistics)
 
 启动  
 `php start.php start -d`
